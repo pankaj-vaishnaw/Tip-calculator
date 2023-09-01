@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+
+  <link rel="stylesheet" href="index.css">
+  <title>charle's Tip Calculator</title>
+</head>
+<body>
+
+  <main>
+    <div class="container">
+      <div id="calculator">
+        <h1 style="text-align: center;font-weight: bold;">Charle's Tip Calculator</h1>
+        <p style="border-bottom: 2px solid rgba(211, 211, 211, 0.5);;"></p>
+        <label for="amount">Bill Amount</label>
+        <br>
+        <button>Rs</button><input type="number" id="amount">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label for="quality">How was your service ?</label>
+        <br>
+        <select id="quality">
+          <option disabled selected value="0">Choose an option</option>
+          <option value="0.3">30% - Outstanding</option>
+          <option value="0.2">20% - Good</option>
+          <option value="0.15">15% - It was ok</option>
+          <option value="0.1">10% - Bad</option>
+          <option value="0.05">5% - Terrible</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label for="guests">How Many people are sharing the bill ?</label>
+        <br>
+        <input type="number" id="guests">
+        <br>
+        <br>
+        <br>
+        <div style="text-align: center">
+          <p>
+          <p style="border-top: 2px solid rgba(211, 211, 211, 0.5);"></p>
+          <button onclick="calculate()" style="border-radius: 5px;width:500px; background-color: maroon;color: aliceblue;">Calculate</button>
+        <label>People</label>  
+        </p>
+        </div>
+      </div>
+      <div id="tip-amount"></div>
+    </div>
+  </main>
+  
+  <script src="index.js"></script>
+</body>
+</html>
